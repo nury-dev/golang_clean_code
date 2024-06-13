@@ -7,8 +7,8 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/naeemaei/golang-clean-web-api/config"
-	"github.com/naeemaei/golang-clean-web-api/pkg/logging"
+	"github.com/nazarow/golang-clean/config"
+	"github.com/nazarow/golang-clean/pkg/logging"
 )
 
 type bodyLogWriter struct {

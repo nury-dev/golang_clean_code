@@ -123,9 +123,9 @@ Description=go-api
 Type=simple
 Restart=always
 RestartSec=20s
-ExecStart=/home/hamed/github/golang-clean-web-api/prod/server
+ExecStart=/home/hamed/github/golang-clean/prod/server
 Environment="APP_ENV=production"
-WorkingDirectory=/home/hamed/github/golang-clean-web-api/prod
+WorkingDirectory=/home/hamed/github/golang-clean/prod
 [Install]
 WantedBy=multi-user.target
 ```

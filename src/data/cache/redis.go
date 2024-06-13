@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/go-redis/redis/v7"
-	"github.com/naeemaei/golang-clean-web-api/config"
+	"github.com/nazarow/golang-clean/config"
 )
 
 var redisClient *redis.Client

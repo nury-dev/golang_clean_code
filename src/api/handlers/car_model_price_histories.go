@@ -2,10 +2,10 @@ package handlers
 
 import (
 	"github.com/gin-gonic/gin"
-	_ "github.com/naeemaei/golang-clean-web-api/api/dto"
-	_ "github.com/naeemaei/golang-clean-web-api/api/helper"
-	"github.com/naeemaei/golang-clean-web-api/config"
-	"github.com/naeemaei/golang-clean-web-api/services"
+	_ "github.com/nazarow/golang-clean/api/dto"
+	_ "github.com/nazarow/golang-clean/api/helper"
+	"github.com/nazarow/golang-clean/config"
+	"github.com/nazarow/golang-clean/services"
 )
 
 type CarModelPriceHistoryHandler struct {
@@ -30,7 +30,7 @@ func NewCarModelPriceHistoryHandler(cfg *config.Config) *CarModelPriceHistoryHan
 // @Router /v1/car-model-price-histories/ [post]
 // @Security AuthBearer
 func (h *CarModelPriceHistoryHandler) Create(c *gin.Context) {
-	Create(c,h.service.Create)
+	Create(c, h.service.Create)
 }
 
 // UpdateCarModelPriceHistory godoc
@@ -47,7 +47,7 @@ func (h *CarModelPriceHistoryHandler) Create(c *gin.Context) {
 // @Router /v1/car-model-price-histories/{id} [put]
 // @Security AuthBearer
 func (h *CarModelPriceHistoryHandler) Update(c *gin.Context) {
-	Update(c,h.service.Update)
+	Update(c, h.service.Update)
 }
 
 // DeleteCarModelPriceHistory godoc
@@ -63,7 +63,7 @@ func (h *CarModelPriceHistoryHandler) Update(c *gin.Context) {
 // @Router /v1/car-model-price-histories/{id} [delete]
 // @Security AuthBearer
 func (h *CarModelPriceHistoryHandler) Delete(c *gin.Context) {
-	Delete(c,h.service.Delete)
+	Delete(c, h.service.Delete)
 }
 
 // GetCarModelPriceHistory godoc

@@ -6,9 +6,9 @@ import (
 	"strconv"
 
 	"github.com/gin-gonic/gin"
-	"github.com/naeemaei/golang-clean-web-api/api/helper"
-	"github.com/naeemaei/golang-clean-web-api/config"
-	"github.com/naeemaei/golang-clean-web-api/pkg/logging"
+	"github.com/nazarow/golang-clean/api/helper"
+	"github.com/nazarow/golang-clean/config"
+	"github.com/nazarow/golang-clean/pkg/logging"
 )
 
 var logger = logging.NewLogger(config.GetConfig())

@@ -4,11 +4,11 @@ import (
 	"time"
 
 	"github.com/golang-jwt/jwt"
-	"github.com/naeemaei/golang-clean-web-api/api/dto"
-	"github.com/naeemaei/golang-clean-web-api/config"
-	"github.com/naeemaei/golang-clean-web-api/constants"
-	"github.com/naeemaei/golang-clean-web-api/pkg/logging"
-	"github.com/naeemaei/golang-clean-web-api/pkg/service_errors"
+	"github.com/nazarow/golang-clean/api/dto"
+	"github.com/nazarow/golang-clean/config"
+	"github.com/nazarow/golang-clean/constants"
+	"github.com/nazarow/golang-clean/pkg/logging"
+	"github.com/nazarow/golang-clean/pkg/service_errors"
 )
 
 type TokenService struct {

@@ -1,4 +1,4 @@
-module github.com/naeemaei/golang-clean-web-api
+module github.com/nazarow/golang-clean
 
 go 1.19
 

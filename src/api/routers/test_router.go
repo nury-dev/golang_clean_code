@@ -2,7 +2,7 @@ package routers
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/naeemaei/golang-clean-web-api/api/handlers"
+	"github.com/nazarow/golang-clean/api/handlers"
 )
 
 func TestRouter(r *gin.RouterGroup) {

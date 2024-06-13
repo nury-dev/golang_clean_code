@@ -5,11 +5,11 @@ import (
 	"time"
 
 	"github.com/go-redis/redis/v7"
-	"github.com/naeemaei/golang-clean-web-api/config"
-	"github.com/naeemaei/golang-clean-web-api/constants"
-	"github.com/naeemaei/golang-clean-web-api/data/cache"
-	"github.com/naeemaei/golang-clean-web-api/pkg/logging"
-	"github.com/naeemaei/golang-clean-web-api/pkg/service_errors"
+	"github.com/nazarow/golang-clean/config"
+	"github.com/nazarow/golang-clean/constants"
+	"github.com/nazarow/golang-clean/data/cache"
+	"github.com/nazarow/golang-clean/pkg/logging"
+	"github.com/nazarow/golang-clean/pkg/service_errors"
 )
 
 type OtpService struct {

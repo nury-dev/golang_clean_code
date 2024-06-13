@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/naeemaei/golang-clean-web-api/config"
+	"github.com/nazarow/golang-clean/config"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"gopkg.in/natefinch/lumberjack.v2"
@@ -42,7 +42,7 @@ func (l *zapLogger) getLogLevel() zapcore.Level {
 
 func (l *zapLogger) Init() {
 	once.Do(func() {
-		fileName := fmt.Sprintf("%s%s-%s.%s",l.cfg.Logger.FilePath,time.Now().Format("2006-01-02"),uuid.New(),"log")
+		fileName := fmt.Sprintf("%s%s-%s.%s", l.cfg.Logger.FilePath, time.Now().Format("2006-01-02"), uuid.New(), "log")
 		w := zapcore.AddSync(&lumberjack.Logger{
 			Filename:   fileName,
 			MaxSize:    1,

@@ -2,10 +2,10 @@ package handlers
 
 import (
 	"github.com/gin-gonic/gin"
-	_ "github.com/naeemaei/golang-clean-web-api/api/dto"
-	_ "github.com/naeemaei/golang-clean-web-api/api/helper"
-	"github.com/naeemaei/golang-clean-web-api/config"
-	"github.com/naeemaei/golang-clean-web-api/services"
+	_ "github.com/nazarow/golang-clean/api/dto"
+	_ "github.com/nazarow/golang-clean/api/helper"
+	"github.com/nazarow/golang-clean/config"
+	"github.com/nazarow/golang-clean/services"
 )
 
 type CarModelPropertyHandler struct {
@@ -30,7 +30,7 @@ func NewCarModelPropertyHandler(cfg *config.Config) *CarModelPropertyHandler {
 // @Router /v1/car-model-properties/ [post]
 // @Security AuthBearer
 func (h *CarModelPropertyHandler) Create(c *gin.Context) {
-	Create(c,h.service.Create)
+	Create(c, h.service.Create)
 }
 
 // UpdateCarModelProperty godoc
@@ -47,7 +47,7 @@ func (h *CarModelPropertyHandler) Create(c *gin.Context) {
 // @Router /v1/car-model-properties/{id} [put]
 // @Security AuthBearer
 func (h *CarModelPropertyHandler) Update(c *gin.Context) {
-	Update(c,h.service.Update)
+	Update(c, h.service.Update)
 }
 
 // DeleteCarModelProperty godoc
@@ -63,7 +63,7 @@ func (h *CarModelPropertyHandler) Update(c *gin.Context) {
 // @Router /v1/car-model-properties/{id} [delete]
 // @Security AuthBearer
 func (h *CarModelPropertyHandler) Delete(c *gin.Context) {
-	Delete(c,h.service.Delete)
+	Delete(c, h.service.Delete)
 }
 
 // GetCarModelProperty godoc

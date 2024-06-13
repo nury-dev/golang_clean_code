@@ -2,10 +2,10 @@ package handlers
 
 import (
 	"github.com/gin-gonic/gin"
-	_ "github.com/naeemaei/golang-clean-web-api/api/dto"
-	_ "github.com/naeemaei/golang-clean-web-api/api/helper"
-	"github.com/naeemaei/golang-clean-web-api/config"
-	"github.com/naeemaei/golang-clean-web-api/services"
+	_ "github.com/nazarow/golang-clean/api/dto"
+	_ "github.com/nazarow/golang-clean/api/helper"
+	"github.com/nazarow/golang-clean/config"
+	"github.com/nazarow/golang-clean/services"
 )
 
 type CityHandler struct {
@@ -30,7 +30,7 @@ func NewCityHandler(cfg *config.Config) *CityHandler {
 // @Router /v1/cities/ [post]
 // @Security AuthBearer
 func (h *CityHandler) Create(c *gin.Context) {
-	Create(c,h.service.Create)
+	Create(c, h.service.Create)
 }
 
 // UpdateCity godoc
@@ -47,7 +47,7 @@ func (h *CityHandler) Create(c *gin.Context) {
 // @Router /v1/cities/{id} [put]
 // @Security AuthBearer
 func (h *CityHandler) Update(c *gin.Context) {
-	Update(c,h.service.Update)
+	Update(c, h.service.Update)
 }
 
 // DeleteCity godoc
@@ -63,7 +63,7 @@ func (h *CityHandler) Update(c *gin.Context) {
 // @Router /v1/cities/{id} [delete]
 // @Security AuthBearer
 func (h *CityHandler) Delete(c *gin.Context) {
-	Delete(c,h.service.Delete)
+	Delete(c, h.service.Delete)
 }
 
 // GetCity godoc

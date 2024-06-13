@@ -3,11 +3,11 @@ package services
 import (
 	"context"
 
-	"github.com/naeemaei/golang-clean-web-api/api/dto"
-	"github.com/naeemaei/golang-clean-web-api/config"
-	"github.com/naeemaei/golang-clean-web-api/data/db"
-	"github.com/naeemaei/golang-clean-web-api/data/models"
-	"github.com/naeemaei/golang-clean-web-api/pkg/logging"
+	"github.com/nazarow/golang-clean/api/dto"
+	"github.com/nazarow/golang-clean/config"
+	"github.com/nazarow/golang-clean/data/db"
+	"github.com/nazarow/golang-clean/data/models"
+	"github.com/nazarow/golang-clean/pkg/logging"
 )
 
 type PersianYearService struct {

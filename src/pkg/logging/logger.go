@@ -1,6 +1,6 @@
 package logging
 
-import "github.com/naeemaei/golang-clean-web-api/config"
+import "github.com/nazarow/golang-clean/config"
 
 type Logger interface {
 	Init()

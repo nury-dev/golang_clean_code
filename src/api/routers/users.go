@@ -2,9 +2,9 @@ package routers
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/naeemaei/golang-clean-web-api/api/handlers"
-	"github.com/naeemaei/golang-clean-web-api/api/middlewares"
-	"github.com/naeemaei/golang-clean-web-api/config"
+	"github.com/nazarow/golang-clean/api/handlers"
+	"github.com/nazarow/golang-clean/api/middlewares"
+	"github.com/nazarow/golang-clean/config"
 )
 
 func User(router *gin.RouterGroup, cfg *config.Config) {

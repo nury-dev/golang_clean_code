@@ -2,10 +2,10 @@ package handlers
 
 import (
 	"github.com/gin-gonic/gin"
-	_ "github.com/naeemaei/golang-clean-web-api/api/dto"
-	_ "github.com/naeemaei/golang-clean-web-api/api/helper"
-	"github.com/naeemaei/golang-clean-web-api/config"
-	"github.com/naeemaei/golang-clean-web-api/services"
+	_ "github.com/nazarow/golang-clean/api/dto"
+	_ "github.com/nazarow/golang-clean/api/helper"
+	"github.com/nazarow/golang-clean/config"
+	"github.com/nazarow/golang-clean/services"
 )
 
 type PropertyHandler struct {
@@ -30,7 +30,7 @@ func NewPropertyHandler(cfg *config.Config) *PropertyHandler {
 // @Router /v1/properties/ [post]
 // @Security AuthBearer
 func (h *PropertyHandler) Create(c *gin.Context) {
-	Create(c,h.service.Create)
+	Create(c, h.service.Create)
 }
 
 // UpdateProperty godoc
@@ -47,7 +47,7 @@ func (h *PropertyHandler) Create(c *gin.Context) {
 // @Router /v1/properties/{id} [put]
 // @Security AuthBearer
 func (h *PropertyHandler) Update(c *gin.Context) {
-	Update(c,h.service.Update)
+	Update(c, h.service.Update)
 }
 
 // DeleteProperty godoc
@@ -63,7 +63,7 @@ func (h *PropertyHandler) Update(c *gin.Context) {
 // @Router /v1/properties/{id} [delete]
 // @Security AuthBearer
 func (h *PropertyHandler) Delete(c *gin.Context) {
-	Delete(c,h.service.Delete)
+	Delete(c, h.service.Delete)
 }
 
 // GetProperty godoc

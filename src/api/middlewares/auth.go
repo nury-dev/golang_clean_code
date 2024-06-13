@@ -7,11 +7,11 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/golang-jwt/jwt"
-	"github.com/naeemaei/golang-clean-web-api/api/helper"
-	"github.com/naeemaei/golang-clean-web-api/config"
-	"github.com/naeemaei/golang-clean-web-api/constants"
-	"github.com/naeemaei/golang-clean-web-api/pkg/service_errors"
-	"github.com/naeemaei/golang-clean-web-api/services"
+	"github.com/nazarow/golang-clean/api/helper"
+	"github.com/nazarow/golang-clean/config"
+	"github.com/nazarow/golang-clean/constants"
+	"github.com/nazarow/golang-clean/pkg/service_errors"
+	"github.com/nazarow/golang-clean/services"
 )
 
 func Authentication(cfg *config.Config) gin.HandlerFunc {

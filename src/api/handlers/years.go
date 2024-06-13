@@ -2,10 +2,10 @@ package handlers
 
 import (
 	"github.com/gin-gonic/gin"
-	_ "github.com/naeemaei/golang-clean-web-api/api/dto"
-	_ "github.com/naeemaei/golang-clean-web-api/api/helper"
-	"github.com/naeemaei/golang-clean-web-api/config"
-	"github.com/naeemaei/golang-clean-web-api/services"
+	_ "github.com/nazarow/golang-clean/api/dto"
+	_ "github.com/nazarow/golang-clean/api/helper"
+	"github.com/nazarow/golang-clean/config"
+	"github.com/nazarow/golang-clean/services"
 )
 
 type PersianYearHandler struct {
@@ -30,7 +30,7 @@ func NewPersianYearHandler(cfg *config.Config) *PersianYearHandler {
 // @Router /v1/years/ [post]
 // @Security AuthBearer
 func (h *PersianYearHandler) Create(c *gin.Context) {
-	Create(c,h.service.Create)
+	Create(c, h.service.Create)
 }
 
 // UpdatePersianYear godoc
@@ -47,7 +47,7 @@ func (h *PersianYearHandler) Create(c *gin.Context) {
 // @Router /v1/years/{id} [put]
 // @Security AuthBearer
 func (h *PersianYearHandler) Update(c *gin.Context) {
-	Update(c,h.service.Update)
+	Update(c, h.service.Update)
 }
 
 // DeletePersianYear godoc
@@ -63,7 +63,7 @@ func (h *PersianYearHandler) Update(c *gin.Context) {
 // @Router /v1/years/{id} [delete]
 // @Security AuthBearer
 func (h *PersianYearHandler) Delete(c *gin.Context) {
-	Delete(c,h.service.Delete)
+	Delete(c, h.service.Delete)
 }
 
 // GetPersianYear godoc

@@ -1,14 +1,14 @@
 package services
 
 import (
-	"github.com/naeemaei/golang-clean-web-api/api/dto"
-	"github.com/naeemaei/golang-clean-web-api/common"
-	"github.com/naeemaei/golang-clean-web-api/config"
-	"github.com/naeemaei/golang-clean-web-api/constants"
-	"github.com/naeemaei/golang-clean-web-api/data/db"
-	"github.com/naeemaei/golang-clean-web-api/data/models"
-	"github.com/naeemaei/golang-clean-web-api/pkg/logging"
-	"github.com/naeemaei/golang-clean-web-api/pkg/service_errors"
+	"github.com/nazarow/golang-clean/api/dto"
+	"github.com/nazarow/golang-clean/common"
+	"github.com/nazarow/golang-clean/config"
+	"github.com/nazarow/golang-clean/constants"
+	"github.com/nazarow/golang-clean/data/db"
+	"github.com/nazarow/golang-clean/data/models"
+	"github.com/nazarow/golang-clean/pkg/logging"
+	"github.com/nazarow/golang-clean/pkg/service_errors"
 	"golang.org/x/crypto/bcrypt"
 	"gorm.io/gorm"
 )
